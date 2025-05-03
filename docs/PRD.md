@@ -2,12 +2,12 @@
 
 ## Project Overview
 
-- **Project Name**: Fampi Blazor
+- **Project Name**: Fampi
 - **Date**: May 2, 2025
 - **Author**: Niklas Lagergren
 - **Version**: 1.0
 - **Status**: Draft
-- **Last Updated**: May 2, 2025
+- **Last Updated**: May 4, 2025
 
 ## Objective
 
