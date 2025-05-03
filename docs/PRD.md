@@ -118,6 +118,8 @@ The second target audience is the family and friends of the tech-savvy family me
 
 - **Framework**: .NET Core 9 Blazor
 - **Mode**: Blazor Interactive Server
+- **Language**: C#
+- **Bootstrap**: Use .NET Aspire to bootstrap the application.
 - **Architecture**: Vertical Slice Architecture
 - **Infrastructure**: Docker
 - **Operating System**: Linux & Windows
@@ -128,6 +130,7 @@ The second target audience is the family and friends of the tech-savvy family me
 - **Security**: Secure authentication, data encryption, and regular security audits
 - **Performance**: Fast loading times and efficient database queries
 - **UI Library\***: Radzen Blazor Components
+- **Dev Commands**: Use .csproj file to create custom dev commands using the DotNetCliToolReference.
 
 ## Appendix
 
