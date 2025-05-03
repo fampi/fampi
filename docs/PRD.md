@@ -13,17 +13,44 @@
 
 A private social media platform for family and friends, designed to be self-hosted and user-friendly. The goal is to create a platform that allows users to share updates, photos, and events with their close circle without the privacy concerns associated with larger social media platforms.
 
-### Iteration 1
+### Iteration 0 - Proof of Concept
+
+To get the Proof of Concept (PoC) up and running quickly while maintaining a good appearance,, the following strategies will be employed:
+
+1. **Use a UI Component Library**: Leverage the [Radzen](https://blazor.radzen.com/) UI component library.
+
+2. **Focus on Core Features**: Implement only the essential UI components required for the PoC, such as:
+
+   - Authentication and user management forms.
+   - A basic news feed layout.
+   - Profile management pages.
+   - A simple post creation form.
+
+3. **Responsive Design**: Ensure the UI is responsive by using the grid system or layout components provided by the chosen library.
+
+4. **Minimal Customization**: Stick to the default themes and styles provided by the library to save time. Customization can be done later if needed.
+
+5. **Iterative Development**: Start with functional components and refine the UI based on feedback during the PoC phase.
+
+### Iteration 1 - Fully working news feed
 
 The first iteration will focus on creating a basic social media platform with user authentication, profile management, and a news feed. The goal is to have a working prototype that allows users to create accounts, manage their profiles, and share updates with their family and friends.
 
-### Iteration 2
+### Iteration 2 - Targeted sharing and event scheduling
 
 The second iteration will focus on enhancing the user experience by adding features such as targeted sharing, event scheduling, and reminders. The goal is to make it easier for users to share content with specific groups of people and to keep track of important events.
 
-### Iteration 3
+### Iteration 3 - Cross-instance sharing
 
 In the long run it should be possible to connect to other instances of Fampi, allowing users to share content with friends and family on other instances.
+
+### Iteration 4 - Extensibility
+
+Extensibility in the form of plugins or modules to allow for future growth and customization. This could include features like food recipes, movie and tv-series watched, books read, or integration with other services.
+
+### Iteration 5 - Marketplace
+
+A central hub for admins to discover and install plugins or modules. And for verified developers to publish their plugins or modules.
 
 ## Key Features
 
@@ -48,6 +75,18 @@ A user must belong to a user group. The default groups that are created are "Fam
 1. Admins can create, edit, and delete user groups.
 2. Admins can assign and remove users to/from groups.
 3. Admins can connect groups to each other, creating a hierarchy of groups.
+
+#### Personal posts
+
+In addition to the user groups, users can also create personal posts that are not shared with any user group. These posts are only visible to the user who created them. This serves as a personal diary or journal, allowing users to keep track of their thoughts and experiences without sharing them with others.
+
+The personal posts needs to be encrypted and stored in a secure way, so that only the user who created them can access them. This can be done using client-side encryption, where the encryption key is stored in the user's browser and not on the server.
+
+To be able to create personal posts the user must generate a key pair. The public key is stored on the server and the private key is stored in the user's browser. The private key is used to encrypt the personal posts before they are sent to the server. The server only stores the encrypted posts and does not have access to the private key.
+
+If the user loses their private key, they will not be able to access their personal posts. Therefore, it is important to provide a way for the user to back up their private key. This can be done by allowing the user to download the private key as a file or by providing a way to export the key to a password manager.
+
+Additionally, users should be informed about the importance of keeping their private key secure and the potential risks of losing it.
 
 ### Profile management
 
@@ -84,6 +123,11 @@ The second target audience is the family and friends of the tech-savvy family me
 - **Operating System**: Linux & Windows
 - **Database**: PostgreSQL
 - **License**: AGPLv3
+- **Design**: Responsive design for mobile and desktop
+- **Accessibility**: Compliance with WCAG 2.1 standards
+- **Security**: Secure authentication, data encryption, and regular security audits
+- **Performance**: Fast loading times and efficient database queries
+- **UI Library\***: Radzen Blazor Components
 
 ## Appendix
 
