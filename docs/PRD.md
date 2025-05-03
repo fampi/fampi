@@ -44,6 +44,10 @@ The second iteration will focus on enhancing the user experience by adding featu
 
 In the long run it should be possible to connect to other instances of Fampi, allowing users to share content with friends and family on other instances.
 
+This could be done through a federation system, where users can connect their accounts across different instances and share content seamlessly. This would require a robust API and authentication system to ensure secure connections between instances.
+
+Existing protocols like ActivityPub, the AT Protocol or OStatus could be explored for inspiration, but the implementation would need to be tailored to the specific needs of Fampi. The solution for Fampi should be simpler than these protocols, as there are no decentralized needs.
+
 ### Iteration 4 - Extensibility
 
 Extensibility in the form of plugins or modules to allow for future growth and customization. This could include features like food recipes, movie and tv-series watched, books read, or integration with other services.
