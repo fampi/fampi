@@ -1,0 +1,11 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C#: BlazorServer Debug",
+      "type": "dotnet",
+      "request": "launch",
+      "projectPath": "${workspaceFolder}/src/Fampi.BlazorServer/Fampi.BlazorServer.csproj"
+    },
+  ]
+}
