@@ -5,7 +5,7 @@
   },
   "projects": {
     "/home/lani/code/fampi-blazor/src/Fampi.BlazorServer/Fampi.BlazorServer.csproj": {
-      "version": "1.0.0",
+      "version": "0.0.1",
       "restore": {
         "projectUniqueName": "/home/lani/code/fampi-blazor/src/Fampi.BlazorServer/Fampi.BlazorServer.csproj",
         "projectName": "Fampi.BlazorServer",
