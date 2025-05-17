@@ -1,23 +1,24 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
+<RadzenBody>
+    <RadzenComponents @rendermode="InteractiveServer" />
+    <RadzenSidebar>
+        <RadzenPanelMenu>
+            <RadzenPanelMenuItem Text="Home" Path="/" />
+            <RadzenPanelMenuItem Text="Counter" Path="/counter" />
+            <RadzenPanelMenuItem Text="Weather" Path="/weather" />
+        </RadzenPanelMenu>
+    </RadzenSidebar>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
+    <RadzenMain>
+        <RadzenHeader>
+            <RadzenButton Text="About" Link="https://learn.microsoft.com/aspnet/core/" Target="_blank" />
+        </RadzenHeader>
 
-        <article class="content px-4">
+        <RadzenContent>
             @Body
-        </article>
-    </main>
-</div>
+        </RadzenContent>
+    </RadzenMain>
+</RadzenBody>
 
-<div id="blazor-error-ui" data-nosnippet>
-    An unhandled error has occurred.
-    <a href="." class="reload">Reload</a>
-    <span class="dismiss">🗙</span>
-</div>
+<RadzenNotification />

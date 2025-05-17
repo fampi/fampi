@@ -1,13 +1,13 @@
 ﻿@page "/counter"
-@rendermode InteractiveServer
+<!-- @using Radzen.Blazor -->
 
-<PageTitle>Counter</PageTitle>
-
-<h1>Counter</h1>
-
-<p role="status">Current count: @currentCount</p>
-
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<RadzenCard>
+    <RadzenHeading Size="H1">Counter</RadzenHeading>
+    <RadzenText>Current count: @currentCount</RadzenText>
+    <RadzenButton Text="Increment" Click="IncrementCount" Style="margin-top: 10px;" />
+    <button @onclick="IncrementCount">Increment</button>
+    <div>Count: @currentCount</div>
+</RadzenCard>
 
 @code {
     private int currentCount = 0;
@@ -15,5 +15,6 @@
     private void IncrementCount()
     {
         currentCount++;
+        Console.WriteLine($"Current count: {currentCount}");
     }
 }
