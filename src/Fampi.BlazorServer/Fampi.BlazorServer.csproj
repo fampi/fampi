@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MudBlazor" Version="8.7.0" />
+    <ProjectReference Include="..\Fampi.Core\Fampi.Core.csproj" />
+  </ItemGroup>
 </Project>

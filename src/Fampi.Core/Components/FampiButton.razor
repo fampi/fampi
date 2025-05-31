@@ -1,0 +1,16 @@
+@using MudBlazor
+@namespace Fampi.Core.Components
+
+<MudButton @attributes="AdditionalAttributes" Color="@ButtonColor" Variant="@ButtonVariant" Disabled="@ButtonDisabled"
+  OnClick="@(e => ButtonOnClick.InvokeAsync(e))">
+  @ChildContent
+</MudButton>
+
+@code {
+  [Parameter] public Color ButtonColor { get; set; } = Color.Default;
+  [Parameter] public Variant ButtonVariant { get; set; } = Variant.Text;
+  [Parameter] public bool ButtonDisabled { get; set; }
+  [Parameter] public EventCallback<Microsoft.AspNetCore.Components.Web.MouseEventArgs> ButtonOnClick { get; set; }
+  [Parameter] public RenderFragment? ChildContent { get; set; }
+  [Parameter(CaptureUnmatchedValues = true)] public Dictionary<string, object>? AdditionalAttributes { get; set; }
+}
